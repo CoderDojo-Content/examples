@@ -1,0 +1,58 @@
+body {
+  background-color: #e00;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px 10px 0 10px;
+}
+
+hr {
+  border: 1px solid #fff;
+}
+
+form {
+  padding: 0 5px;
+}
+
+form > label {
+  padding-left: 10px;
+}
+
+figure {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  padding: 5px;
+  text-align: center;
+  width: 130px;
+  height: 130px;
+}
+
+figure > figcaption {
+  text-transform: capitalize;
+}
+
+#display {
+  display: flex;
+  min-height: 400px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#spinner {
+  animation: spin 5s linear infinite;
+  border-radius: 50%;
+  border: 16px solid #fff;
+  border-top: 16px solid #ccc;
+  border-bottom: 16px solid #ccc;
+  height: 120px;
+  width: 120px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
