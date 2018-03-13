@@ -1,0 +1,238 @@
+body {
+  background-color: #AFEEEE;
+  font-family: "Helvetica", sans-serif;
+  color: #800080;
+}
+h1 {
+  color: #FFF8DC;
+  font-family: "Times New Roman", serif;
+}
+h2 {
+  font-family: "Times New Roman", serif;
+}
+h3 {
+  font-family: "Brush Script MT", serif;
+  font-style: italic;
+}
+a {
+  color: #6600FF;
+}
+nav ul {
+  background-color: #FF3647;
+  border-style: solid;
+  border-color: #C71585;
+  border-width: 2px;
+  padding: 10px;
+  border-radius: 10px;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #FFEFD5;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #880055;
+}
+/* Add hover effects to the nav menu directly instead of with a class */
+nav ul li a:hover {
+  animation-name: glowPulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+img {
+  border-radius: 30px;
+  border: 2px solid white;
+}
+img:hover {
+  border: 2px dashed navy;
+}
+
+section {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #F5FFFA;
+  padding-bottom: 10px;
+}
+
+article {
+  border-radius: 10px;
+  background-color: #85E0E0;
+  padding: 10px;
+}
+
+
+/* CSS Classes */
+
+.purpleBackground {
+  background-color: #ccb3ff;
+}
+
+.darkerBackground {
+  background-color: #aa80ff;
+}
+
+.sectionSpacing {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+.yellowBackground {
+  background-color: #ffffcc;
+  color: #A52A2A;
+}
+
+.solidRoundBorders {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f5fffa;
+  border-radius: 10px;
+}
+
+.smallPictures {
+  width: 100px;
+}
+
+.mediumPictures {
+  width: 200px;
+}
+
+/* hover effects on links using a CSS class */
+.niceLinks {
+  text-decoration: none;
+}
+.niceLinks:hover {
+  color: #FFEFD5;
+}
+
+
+/* Styling for individual elements by ID */
+
+#myCoolText {
+  color: #f0f8ff;
+  border: 2px ridge #bb99ff;
+  padding: 15px;
+  text-align: center;
+  /*animation-name: glowPulse;*/
+  /*animation-duration: 1.5s;*/
+  /*animation-iteration-count: infinite;*/
+}
+
+#frontPage {
+  background: #48D1CC;
+  
+  /*pastel colours version*/
+  background: repeating-linear-gradient(-45deg, #eeafbf 0%,
+  #eeeeaf 7.14%, #afeeaf 14.28%,
+  #afeeee 21.42%, #afeeee 28.56%, 
+  #afafee 35.7%, #eeafee 42.84%, #eeafbf 50%);
+  
+  /*bright colours version*/
+  /*background: repeating-linear-gradient(-45deg, red 0%, */
+  /*yellow 7.14%, lime 14.28%,*/
+  /*cyan 21.42%, cyan 28.56%, */
+  /*blue 35.7%, magenta 42.84%, red 50%);*/
+  
+  background-size: 600vw 600vw;
+  /*animation: slide 10s infinite linear forwards;*/
+  
+}
+
+#frontPageArticle {
+  background: none;
+}
+
+#imgTito {
+  border-radius: 100%;
+  width: 100px;
+  /*animation-name: myFirstAnimation;*/
+  /*animation-duration: 2s;*/
+  /*animation-iteration-count: 1;*/
+}
+
+#imgTito:hover {
+  animation-name: rollOver;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+/**********************************
+This section is for styling tables
+***********************************/
+table, th, td {
+  border: 1px solid #F0FFF0;
+  border-collapse: collapse;
+}
+tr {
+  background-color: #AFEEEE;
+}
+th, td {
+  vertical-align: top;
+  padding: 5px;
+  text-align: left;
+}
+th {
+  color: #800080;
+}
+td {
+  color: #800080;
+}
+/********************************/
+
+
+/* Animations */
+
+@keyframes myFirstAnimation {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+
+@keyframes glowPulse {
+  0% {
+    color: DeepSkyBlue;
+  }
+  25% {
+    color: LightGreen;
+  }
+  50% {
+    color: #eeeeaf;
+  }
+  75% {
+    color: #eeafee;
+  }
+  100% {
+    color: DeepSkyBlue;
+  }
+}
+
+
+@keyframes slide {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 600vw;
+  }
+}
+
+
+@keyframes rollOver {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+
