@@ -1,0 +1,369 @@
+body {
+  background-color: #9f80ff;
+  font-family: "Lato", sans-serif;
+  color: Purple;
+}
+h1 {
+  color: CornSilk;
+  font-family: "League Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+  font-family: "League Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "League Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul {
+  display: flex; 
+  flex-direction: column;
+  background-color: tomato;
+  border-style: solid;
+  border-color: MediumVioletRed;
+  border-width: 2px;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+nav ul li {
+  list-style-type: none;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  color: PapayaWhip;
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: Brown;
+}
+
+
+/* Adjust menu for bigger screens */
+
+@media all and (min-width: 600px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media all and (min-width: 800px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}  
+  
+
+section {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #F5FFFA;
+  padding-bottom: 10px;
+}
+
+
+article {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+aside {
+  padding: 10px;
+}
+
+figure {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+    
+/***** CSS individual elements (by ID) *****/
+
+#frontPage {
+  background: #c1ebec;
+  background: linear-gradient(to right, #87CEFA, #c1ebec);
+}
+
+#welcomeText {
+  animation-name: green-pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+#imgTito {
+  border-radius: 100%;
+  width: 100px;
+}
+#imgTito:hover {
+  animation-name: rollOver;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+
+#photoBox {
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+
+#imgHorse {
+  width: 120px;
+  top: 200px;
+  left: 390px;
+  position: absolute;
+  z-index: 10;
+}
+#imgSheep {
+  width: 200px;
+  top: 100px;
+  left: 20px;
+  position: absolute;
+  z-index: 8;
+}
+#imgCoast {
+  width: 150px;
+  top: 250px;
+  left: 10px;
+  position: absolute;
+  z-index: 5;
+}
+#imgTrees {
+  width: 110px;
+  top: 65px;
+  left: 205px;
+  position: absolute;
+  z-index: 9;
+}
+#imgTeaCat {
+  width: 250px;
+  top: 210px;
+  left: 160px;
+  position: absolute;
+  z-index: 7;
+}
+#imgStreet {
+  width: 180px;
+  top: 90px;
+  left: 310px;
+  position: absolute;
+  z-index: 6;
+}
+
+#photoText {
+  font-family: "brush script MT";
+  position: absolute;
+  color: lightgreen;
+  font-size: 4em;
+  left: 35px;
+  top: 15px;
+  z-index: 20;
+}
+
+
+
+/***** CSS Classes *****/
+
+.sectionSpacing {
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.purpleBackground {
+  background-color: #9f80ff;
+}
+
+.greenBackground {
+  background-color: #48D1CC;
+}
+
+.yellowBackground {
+  background-color: #FFFFCC;
+  color: #A52A2A;
+}
+
+.solidRoundBorders {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F5FFFA;
+  border-radius: 10px;
+}
+
+.lightPurpleBackground {
+  background-color: #cfbfff;
+}
+
+.specialText {
+  color: #ff4500;
+  font-size: larger;
+}
+
+.niceLinks {
+  text-decoration: none;
+  color: #A52A2A;
+}
+.niceLinks:hover {
+  color: PapayaWhip;
+}
+
+.mediumPics {
+  width: 200px;
+  border-radius: 10px;
+}
+ 
+
+.smallPics {
+  height: 60px;
+  border-radius: 10px;
+}
+
+
+.collagePhoto {
+  border: 1px solid white;
+}
+
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #F0FFFF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  
+  /******** Card 06 Special effects ********/
+  transition: all 0.2s ease-out;
+  /****************/
+}
+.card:hover {
+  
+  /******** Card 06 Special effects ********/
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  /****************/
+}
+
+.cardLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+/******** Card 06 Special effects ********/
+
+.bigPics {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.lightbox {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.lightbox:target {
+  visibility: visible;
+}
+
+/****************/
+
+
+.attPageLayoutGrid {
+  display: grid;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 1em;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "agArticle agAside1"
+    "agArticle agAside2"
+    "agArticle .";
+}
+
+.attGridArticle {
+  grid-area: agArticle;
+}
+
+.attGridAside1 {
+  grid-area: agAside1;
+}
+
+.attGridAside2 {
+  grid-area: agAside2;
+}
+
+
+
+/***** Animations *****/
+
+@keyframes green-pulse {
+  0% {
+    color: CornSilk;
+  }
+  50% {
+    color: lightgreen;
+  }
+  100% {
+    color: CornSilk;
+  }
+}
+
+
+@keyframes rollOver {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+/**********************************
+This section is for styling tables
+***********************************/
+table, th, td {
+  border: 1px solid HoneyDew;
+  border-collapse: collapse;
+}
+tr {
+  background-color: PaleTurquoise;
+}
+th, td {
+  vertical-align: top;
+  padding: 5px;
+  text-align: left;
+}
+th {
+  color: purple;
+}
+td {
+  color: purple;
+}
